@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="303dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_dsi_logo" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="exemple@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="DuplicateIds" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="Se Connecter"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/etCCompte"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/blue"
+        android:text="Crée un compte"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:background="@color/blue"
+        android:text="Besoin d'aide?"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
